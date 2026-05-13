@@ -12,31 +12,52 @@ If you've ever tried to ask an AI to refactor a complex feature across multiple 
 
 ---
 
-## Installation
+## Installation (Mac, Windows, and Linux)
 
-Since this tool is currently hosted on GitHub, you can install it globally on your machine in just a few steps:
+This tool is designed to be installed globally on your machine so you can use it inside **any** of your projects. Follow these 3 exact steps:
 
-**1. Clone the repository:**
+**Step 1: Download the tool**
+Clone this repository to your machine and navigate into the folder:
 ```bash
 git clone https://github.com/davidbond17/repo-pack.git
 cd repo-pack
+```
+
+**Step 2: Install dependencies**
+Install the minimal required packages:
+```bash
 npm install
 ```
 
-**2. Link it globally:**
+**Step 3: Register the command globally**
+Run this command to create a global link on your computer. This tells your operating system that whenever you type `repo-pack`, it should run this script.
 ```bash
 npm link
 ```
-*(This safely creates a global shortcut, allowing you to run the `repo-pack` command from any folder on your computer.)*
+*(Note for Windows users: You may need to run your command prompt/terminal as Administrator for `npm link` to succeed without permission errors.)*
+
+---
 
 ## Usage
 
-Basic usage in your current directory:
+Now that you have successfully run `npm link`, you can use the tool anywhere! 
+
+**1. Navigate to the project you want to pack:**
+```bash
+cd path/to/your/other/project
+```
+
+**2. Run the tool directly:**
 ```bash
 repo-pack
 ```
+*(Notice there is no `npx` or `npm` in front of it!)*
 
-Target a specific directory:
+This will instantly generate a `repo-pack-output.md` file in that folder containing your entire codebase.
+
+### Advanced Usage Options
+
+Target a specific sub-directory instead of the whole project:
 ```bash
 repo-pack ./src/components
 ```
