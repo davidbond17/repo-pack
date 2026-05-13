@@ -12,23 +12,22 @@ If you've ever tried to ask an AI to refactor a complex feature across multiple 
 
 ---
 
-## Quick Start (No Installation Required)
-
-You don't even need to install it locally! You can run it instantly anywhere using `npx`:
-
-```bash
-npx repo-pack
-```
-
-This will bundle the current directory into a file named `repo-pack-output.md`.
-
 ## Installation
 
-If you want to install it globally to use everywhere without `npx`:
+Since this tool is currently hosted on GitHub, you can install it globally on your machine in just a few steps:
 
+**1. Clone the repository:**
 ```bash
-npm install -g repo-pack
+git clone https://github.com/davidbond17/repo-pack.git
+cd repo-pack
+npm install
 ```
+
+**2. Link it globally:**
+```bash
+npm link
+```
+*(This safely creates a global shortcut, allowing you to run the `repo-pack` command from any folder on your computer.)*
 
 ## Usage
 
