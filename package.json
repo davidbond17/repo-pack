@@ -1,0 +1,25 @@
+{
+  "name": "repo-pack",
+  "version": "1.0.0",
+  "description": "A CLI tool to bundle your entire codebase into a single markdown file for AI context.",
+  "main": "bin/cli.js",
+  "type": "module",
+  "bin": {
+    "repo-pack": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "context",
+    "bundle",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ignore": "^5.3.1"
+  }
+}
