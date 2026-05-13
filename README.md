@@ -31,10 +31,18 @@ npm install
 
 **Step 3: Register the command globally**
 Run this command to create a global link on your computer. This tells your operating system that whenever you type `repo-pack`, it should run this script.
+
+**For Mac / Linux users:**
+*(You will likely need `sudo` to bypass permission errors)*
+```bash
+sudo npm link
+```
+
+**For Windows users:**
+*(Make sure to run your command prompt/terminal as Administrator)*
 ```bash
 npm link
 ```
-*(Note for Windows users: You may need to run your command prompt/terminal as Administrator for `npm link` to succeed without permission errors.)*
 
 ---
 
